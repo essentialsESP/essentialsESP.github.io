@@ -1,0 +1,154 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+header {
+    background-color: #e06c75;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Sección de recetas */
+.recipe-section {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Recetas */
+.recipe {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    animation: slideIn 1s ease-in-out;
+}
+
+.recipe-content {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.recipe h3 {
+    font-size: 28px;
+    color: #e06c75;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.recipe .image img:hover {
+    transform: scale(1.05);
+}
+
+.instructions {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.instructions h4 {
+    font-size: 22px;
+    color: #333;
+}
+
+.instructions ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.instructions ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.adsense {
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
